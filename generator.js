@@ -104,3 +104,4 @@ function prehrajZvuk() {
 // TODO: 2. Předělat 'data.js' na formát JSON (načítání z externího souboru).
 // TODO: 3. Přidat zvukový efekt při kliknutí (Audio API)-nefunguje!!!-uz jo
 // TODO:prokliky - 1 splnen
+// test
