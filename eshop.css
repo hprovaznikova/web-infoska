@@ -1,0 +1,44 @@
+body {
+    font-family: monospace;
+    margin: 0;
+    background-color: #175e0e;
+}
+
+.nabidka {
+  display: grid;
+    height: 100vh;
+
+     grid-template-areas:
+      "hlavicka hlavicka"
+        "menu e-shop"
+        "paticka paticka";
+    grid-template-rows: auto 1fr auto; 
+    grid-template-columns: 200px 1fr;  
+    }
+
+.hlavicka { 
+    grid-area: hlavicka; 
+    background-color: #815723;
+    padding: 20px;
+}
+
+.e-shop {
+    grid-area: e-shop; 
+    background-color: #998863;
+    padding: 20px;
+}
+
+.paticka {
+    grid-area: paticka; 
+    background-color: #255321;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.menu { 
+    grid-area: menu; 
+    background-color: #618f61;
+    padding: 10px;
+    font-size: 20px;
+}
