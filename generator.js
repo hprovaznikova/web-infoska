@@ -40,17 +40,23 @@ function vyberVec(seznamVeci, minulaVec) {
 
 let minulaVec = "";
 // 3. FUNKCE
+const obrazekPrvek = document.querySelector("#vysledek-img");
+
 function vygenerujNahodu() {
     // Získáme náhodné číslo (index)
     // Math.random() dává 0 až 0.999...
     // Vynásobíme délkou seznamu a zaokrouhlíme dolů (Math.floor)
     let vybranaVec = vyberVec(seznamVeci, minulaVec);
-
+    let vybranyObjekt = seznamVeci[nahodnyIndex];
     // Změníme text v našem HTML prvku
     vystup.textContent = vybranaVec;
+    vystup.textContent = vybranyObjekt.text;
+
+    obrazekPrvek.src = vybranyObjekt.obrazek;
+    obrazekPrvek.alt = vybranyObjekt.text;
     //konzole pro kontrolu
     console.log("Vybráno:", vybranaVec);
-
+    
     //----
     // 2. Přidáme třídu pro efekt
     vystup.classList.add("zvyrazneny-vysledek");
