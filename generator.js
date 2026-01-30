@@ -42,6 +42,10 @@ let minulaVec = "";
 // 3. FUNKCE
 const obrazekPrvek = document.querySelector("#vysledek-img");
 
+// Někde nahoře vybereme span pro počítadlo
+const pocitadloPrvek = document.querySelector("#pocitadlo");
+
+
 function vygenerujNahodu() {
     // Získáme náhodné číslo (index)
     // Math.random() dává 0 až 0.999...
@@ -56,7 +60,7 @@ function vygenerujNahodu() {
     obrazekPrvek.alt = vybranyObjekt.text;
     //konzole pro kontrolu
     console.log("Vybráno:", vybranaVec);
-    
+
     //----
     // 2. Přidáme třídu pro efekt
     vystup.classList.add("zvyrazneny-vysledek");
@@ -81,6 +85,22 @@ function vygenerujNahodu() {
     // ZABALÍME do textu a uložíme
     localStorage.setItem("mojeHistorie", JSON.stringify(historie));
     prehrajZvuk()
+
+
+    // --- PRÁCE SE SESSION STORAGE ---
+    // 1. Načteme aktuální stav (pokud není, začneme od 0)
+    let pocet = sessionStorage.getItem("serieKliknuti");
+
+    // Data ze storage jsou vždy TEXT. Převedeme na ČÍSLO.
+    // Pokud je null (první klik), použijeme 0.
+    pocet = parseInt(pocet) || 0;
+    // 2. Zvýšíme o 1
+    pocet = pocet + 1;
+    // 3. Uložíme zpět (jako text)
+    sessionStorage.setItem("serieKliknuti", pocet);
+    // 4. Vypíšeme do stránky
+    pocitadloPrvek.textContent = pocet;
+
 }
 
 // Načteme text z LocalStorage a hned ho "rozbalíme" na pole. Pokud nic není, vytvoříme prázdné [].
