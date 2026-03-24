@@ -1,0 +1,72 @@
+body {
+    font-family: monospace;
+    margin: 0;
+    background-color: #af2626;
+}
+
+.kontejner {
+    display: grid;
+    height: 100vh;
+
+     grid-template-areas:
+        "hlavicka hlavicka"
+        "menu obsah"
+        "paticka paticka";
+
+    grid-template-rows: auto 1fr auto; 
+    grid-template-columns: 200px 1fr;  
+}
+
+.hlavicka { 
+    grid-area: hlavicka; 
+    background-color: #815723;
+    padding: 20px;
+}
+
+.menu { 
+    grid-area: menu; 
+    background-color: #618f61;
+    padding: 10px;
+}
+
+
+
+.obsah { 
+    grid-area: obsah; 
+    background-color: #998863;
+    padding: 20px;
+}
+.paticka { 
+    grid-area: paticka; 
+    background-color: #255321;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.obsah {
+    display: grid;
+    place-items: center; /* Vystředí vše doprostřed (vertikálně i horizontálně) */
+    gap: 20px; /* Mezera mezi tlačítkem a boxem na výsledek */
+    font-size: 25px;
+}
+
+.zvyrazneny-vysledek {
+    color: rgb(156, 212, 133);
+    background-color: #998863; /* Zelená */
+    transform: scale(1.1); /* Zvětšení */
+    transition: 0.3s; /* Animace */
+    font-size: 20px;
+}
+
+#hl-tlacitko {
+    border: 3px solid rgb(24, 85, 0); 
+    color: rgb(13, 48, 2); 
+    font-size: 15px;
+    background-color: #d1ae6d;
+}
+
+
+
+
+
