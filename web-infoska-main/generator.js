@@ -68,7 +68,7 @@ function vygenerujNahodu() {
 
     // --- NOVÝ KÓD ---
     // Uložíme vybranou věc do paměti pod klíčem 'posledniAktivita'
-    localStorage.setItem("posledniAktivita", vybranyObjekt);
+    localStorage.setItem("posledniAktivita", JSON.stringify(vybranyObjekt));
     console.log("Uloženo do paměti:", vybranyObjekt);
     // ----------------
     // Přidáme novou věc na začátek pole
@@ -100,65 +100,7 @@ function prehrajZvuk() {
     zvuk.play();
 }
 
-//DARK MODE
-// Výběr prvků
-const tlacitkoTema = document.querySelector("#btn-tema");
-const celeTelo = document.body;
-
-
-// Funkce na přepnutí
-function prepniTema() {
-    // toggle přidá třídu, pokud tam není, a odebere ji, pokud tam je
-    celeTelo.classList.toggle("tmavy-rezim");
-    
-    // Změna textu na tlačítku
-    if (celeTelo.classList.contains("tmavy-rezim")) {
-        tlacitkoTema.textContent = "light mode";
-    } else {
-        tlacitkoTema.textContent = "dark mode";
-    }
-}
-
-
-// Spojení tlačítka s funkcí
-tlacitkoTema.addEventListener("click", prepniTema);
-
-
-// A) Vylepšení funkce prepniTema() - ULOŽENÍ
-function prepniTema() {
-    celeTelo.classList.toggle("tmavy-rezim");
-    
-    let jeTmavy = celeTelo.classList.contains("tmavy-rezim");
-    if (jeTmavy) {
-        tlacitkoTema.textContent = "light mode";
-        localStorage.setItem("vybraneTema", "tmave"); // Uložíme volbu
-    } else {
-        tlacitkoTema.textContent = "dark mode";
-        localStorage.setItem("vybraneTema", "svetle"); // Uložíme volbu
-    }
-}
-
-
-// B) Načtení paměti PŘI STARTU APLIKACE (Přidej kamkoliv nahoru mimo funkce)
-const ulozeneTema = localStorage.getItem("vybraneTema");
-
-
-// Pokud uživatel už někdy zvolil tmavé téma, rovnou mu ho zapneme
-if (ulozeneTema === "tmave") {
-    celeTelo.classList.add("tmavy-rezim");
-    tlacitkoTema.textContent = "light mode";
-}
-
-
-function zmen_styl() {
-    localStorage.setItem("typ_stylu","generator dark mode.css")
-    odkaz_stylu.href="generator dark mode.css"
-    }
-
-    
-function zmen_styl2() {
-    localStorage.setItem("typ_stylu","generator.css")
-    odkaz_stylu.href="generator.css"
-    }
 //----
-//dodelat dark/light mode aby FUNGOVAL!!! 
+//udelat dark mode na eshop
+//nastavit tmave barvz
+

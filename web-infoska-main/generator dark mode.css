@@ -21,7 +21,7 @@ body {
     grid-area: hlavicka; 
     background-color: #255321;
     padding: 20px;
-    color:white;
+     color:white;
 }
 
 .menu { 
@@ -35,7 +35,7 @@ body {
 
 .obsah { 
     grid-area: obsah; 
-    background-color: #4e452a;
+    background-color: #6d5d2e;
     padding: 20px;
 }
 .paticka { 
