@@ -1,0 +1,49 @@
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+    background-color: #e0d5b4;
+}
+
+.nabidka {
+  display: grid;
+    height: 100vh;
+
+     grid-template-areas:
+      "hlavicka hlavicka"
+        "menu obsah"
+        "menu obsah"
+        "paticka paticka";
+    grid-template-rows: auto 1fr auto; 
+    grid-template-columns: 200px 1fr;  
+    }
+
+.hlavicka { 
+    grid-area: hlavicka; 
+    background-color: #255321;
+    padding: 20px;
+    color:white;
+}
+
+.obsah {
+    grid-area: obsah; 
+    background-color: #e0d5b4;
+    padding: 40px;
+    font-size: 17px;
+}
+
+.paticka {
+    grid-area: paticka; 
+    background-color: #255321;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.menu { 
+    grid-area: menu; 
+    background-color: #618f61;
+    padding: 10px;
+    font-size: 20px;
+    color:black;
+
+}

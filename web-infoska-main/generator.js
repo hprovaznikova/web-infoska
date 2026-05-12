@@ -103,4 +103,3 @@ function prehrajZvuk() {
 //----
 //udelat dark mode na eshop
 //nastavit tmave barvz
-
