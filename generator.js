@@ -4,7 +4,6 @@ console.log("ready")
 // Do proměnné 'tlacitko' uložíme odkaz na HTML element s id="hlavni-tlacitko"
 const tlacitko = document.querySelector("#hl-tlacitko");
 
-
 // Do proměnné 'vystup' uložíme odkaz na HTML element s id="vysledek-box"
 const vystup = document.querySelector("#vysledek");
 
@@ -29,6 +28,8 @@ console.log(vystup);
 tlacitko.addEventListener("click", vygenerujNahodu);
 
 function vyberVec(seznamVeci, minulaVec) {
+    let nahodnyIndex;
+    let novaVec;
     do {
         nahodnyIndex = Math.floor(Math.random() * seznamVeci.length);
         novaVec = seznamVeci[nahodnyIndex];
@@ -41,25 +42,19 @@ function vyberVec(seznamVeci, minulaVec) {
 let minulaVec = "";
 // 3. FUNKCE
 const obrazekPrvek = document.querySelector("#vysledek-img");
-
-// Někde nahoře vybereme span pro počítadlo
-const pocitadloPrvek = document.querySelector("#pocitadlo");
-
-
 function vygenerujNahodu() {
     // Získáme náhodné číslo (index)
     // Math.random() dává 0 až 0.999...
     // Vynásobíme délkou seznamu a zaokrouhlíme dolů (Math.floor)
-    let vybranaVec = vyberVec(seznamVeci, minulaVec);
-    let vybranyObjekt = seznamVeci[nahodnyIndex];
+    let vybranyObjekt = vyberVec(seznamVeci, minulaVec);
     // Změníme text v našem HTML prvku
-    vystup.textContent = vybranaVec;
-    vystup.textContent = vybranyObjekt.text;
+     vystup.textContent = vybranyObjekt.text;
 
     obrazekPrvek.src = vybranyObjekt.obrazek;
-    obrazekPrvek.alt = vybranyObjekt.text;
+    obrazekPrvek.alt = vybranyObjekt.text; // Pro přístupnost
+
     //konzole pro kontrolu
-    console.log("Vybráno:", vybranaVec);
+    console.log("Vybráno:", vybranyObjekt);
 
     //----
     // 2. Přidáme třídu pro efekt
@@ -73,11 +68,11 @@ function vygenerujNahodu() {
 
     // --- NOVÝ KÓD ---
     // Uložíme vybranou věc do paměti pod klíčem 'posledniAktivita'
-    localStorage.setItem("posledniAktivita", novaVec);
-    console.log("Uloženo do paměti:", novaVec);
+    localStorage.setItem("posledniAktivita", JSON.stringify(vybranyObjekt));
+    console.log("Uloženo do paměti:", vybranyObjekt);
     // ----------------
     // Přidáme novou věc na začátek pole
-    historie.unshift(novaVec);
+    historie.unshift(vybranyObjekt);
 
     // Ořízneme historii na posledních 5 položek (nepovinné, ale dobré)
     historie = historie.slice(0, 5);
@@ -85,22 +80,6 @@ function vygenerujNahodu() {
     // ZABALÍME do textu a uložíme
     localStorage.setItem("mojeHistorie", JSON.stringify(historie));
     prehrajZvuk()
-
-
-    // --- PRÁCE SE SESSION STORAGE ---
-    // 1. Načteme aktuální stav (pokud není, začneme od 0)
-    let pocet = sessionStorage.getItem("serieKliknuti");
-
-    // Data ze storage jsou vždy TEXT. Převedeme na ČÍSLO.
-    // Pokud je null (první klik), použijeme 0.
-    pocet = parseInt(pocet) || 0;
-    // 2. Zvýšíme o 1
-    pocet = pocet + 1;
-    // 3. Uložíme zpět (jako text)
-    sessionStorage.setItem("serieKliknuti", pocet);
-    // 4. Vypíšeme do stránky
-    pocitadloPrvek.textContent = pocet;
-
 }
 
 // Načteme text z LocalStorage a hned ho "rozbalíme" na pole. Pokud nic není, vytvoříme prázdné [].
@@ -121,13 +100,6 @@ function prehrajZvuk() {
     zvuk.play();
 }
 
-// Bonus: Výpis do 
-
-
 //----
-
-// TODO: 1. Naučit se 'localStorage', abychom mohli ukládat skóre i po zavření prohlížeče.-hotovo
-// TODO: 2. Předělat 'data.js' na formát JSON (načítání z externího souboru).
-// TODO: 3. Přidat zvukový efekt při kliknutí (Audio API)-nefunguje!!!-uz jo
-// TODO:prokliky - 1 splnen
-// test
+//udelat dark mode na eshop
+//nastavit tmave barvz
