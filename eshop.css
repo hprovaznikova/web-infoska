@@ -108,7 +108,7 @@ body {
     flex-direction: column; /* Důležité: dá obrázek nahoru a text dolů */
     align-items: center;
     text-decoration: none;  /* Zruší podtržení odkazu */
-    color: #255321;         /* Tmavě zelená barva textu, aby ladila */
+    color: #699165;         /* Tmavě zelená barva textu, aby ladila */
     font-weight: bold;
     transition: transform 0.2s; /* Efekt při najetí myší */
 }
