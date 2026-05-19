@@ -7,3 +7,19 @@
 .obrazek {
     border: 3px solid rgb(24, 85, 0); 
 }
+
+.popis {
+    max-width: 500px;
+    display: flex;          /* Seřadí prvky uvnitř vedle sebe do řady */    /* Vertikálně vycentruje text vedle obrázku */
+    gap: 20px;              /* Vytvoří mezeru mezi obrázkem a textem */
+    margin-bottom: 30px;    /* Mezera pod celým boxem */
+}
+
+#vlozitdokosiku {
+    border: 3px solid rgb(24, 85, 0); 
+    color: rgb(255, 255, 255); 
+    font-size: 15px;
+    background-color: #618f61;
+    padding: 10px 20px;
+    
+}
