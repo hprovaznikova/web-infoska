@@ -96,7 +96,9 @@ body {
      color: black
 }
 
-
+.tmavy-rezim {
+    color-scheme: dark;
+    }
 /* --- NOVÉ STYLY PRO PRODUKTY --- */
 
 /* Odstranění teček u seznamu a seřazení vedle sebe */

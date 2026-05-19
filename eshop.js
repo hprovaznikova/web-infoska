@@ -59,8 +59,11 @@ const ulozeneTema = localStorage.getItem("vybraneTema");
 // Pokud uživatel už někdy zvolil tmavé téma, rovnou mu ho zapneme
 if (ulozeneTema === "tmave") {
     nastavTmavy()
-    tlacitkoTema.textContent = "light mode";
-      }
+    if (tlacitkoTema) {
+        tlacitkoTema.textContent = "light mode";
+    }
+}
+
 
 
 
