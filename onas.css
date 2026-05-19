@@ -1,17 +1,32 @@
+/* Kontejner, který seřadí profily vedle sebe do řady */
+.tym-sekce {
+    display: flex;
+    flex-wrap: wrap;       /* Když se nevejdou, skočí na další řádek *//* Vycentruje profily uprostřed stránky */
+    gap: 100px;             /* Mezera mezi jednotlivými profily */
+    margin-top: 30px;
+}
 
+/* Styl pro jednotlivý profil (fotka + text pod ní) */
+.profil {
+    text-align: center;
+    display: flex;
+    flex-direction: column;  /* Seřadí fotku a jméno pod sebe */
+    align-items: center;
+}
+
+/* Styl samotné fotky */
 .foto-tymu {
-    width: 200px;           /* Šířka obrázku */
-    height: 200px;          /* Výška obrázku */
-    object-fit: cover;      /* Ořízne obrázek, aby se nedeformoval */
+    width: 200px;           
+    height: 200px;          
+    object-fit: cover;      /* Ořízne obrázek bez deformace */
     border: 3px solid #618f61; /* Zelený rámeček */
     border-radius: 15px;    /* Zaoblené rohy */
-    margin-bottom: 10px;    /* Mezera mezi obrázkem a textem */
     background-color: white;
-    list-style: none;
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap; /* Pokud se jich tam vejde víc, skočí na další řádek */
-    gap: 30px;      /* Mezera mezi jednotlivými produkty */
-    text-align: center;
+    margin-bottom: 10px;    /* Mezera mezi obrázkem a jménem */
+    transition: transform 0.2s ease; /* Plynulé zvětšení */
+}
+
+/* Efekt zvětšení se aktivuje při najetí myší na fotku */
+.foto-tymu:hover {
     transform: scale(1.05);
 }

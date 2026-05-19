@@ -9,7 +9,7 @@ const seznamVeci = [
     {
         text: "prirodni",
         kategorie: "turbánek",
-        obrazek: "img/prirodni.jpg",
+        obrazek: "img/přírodní turban.png",
     },
     {
         text: "narodni",
