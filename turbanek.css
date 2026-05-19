@@ -3,3 +3,7 @@
 .obsah { 
  padding: 40px;
 }
+
+.obrazek {
+    border: 3px solid rgb(24, 85, 0); 
+}
