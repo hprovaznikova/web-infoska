@@ -4,7 +4,7 @@ const seznamVeci = [
     {
         text: "crazy",
         kategorie: "turbánek",
-        obrazek: "img/crazy.jpg", // Cesta k obrázku ve tvé složce
+        obrazek: "img/turban bizzare.png", // Cesta k obrázku ve tvé složce
     },
     {
         text: "prirodni",
@@ -14,7 +14,7 @@ const seznamVeci = [
     {
         text: "narodni",
         kategorie: "turbánek",
-        obrazek: "img/narodni.jpg",
+        obrazek: "img/turbanek.čr.png",
     },
    
     {
