@@ -41,9 +41,6 @@ body {
     margin-left: auto;      /* Magický řádek, který odsune logo na úplný pravý kraj */
 }
 
-
-
-
 .e-shop {
     grid-area: e-shop;
     padding: 20px;
