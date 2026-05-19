@@ -29,7 +29,7 @@ body {
     gap: 20px;              /* Mezera mezi nadpisem a tlačítkem */
 }
 .dark-hlavicka {
-    background-color: #215732;
+    background-color: #255321;
     color:white;
 }
 
@@ -69,7 +69,7 @@ body {
 
 
 .dark-paticka {
-    background-color: #215732;
+    background-color: #255321;
     color: white;
 }
 
