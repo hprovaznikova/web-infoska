@@ -17,15 +17,28 @@ body {
     grid-template-columns: 200px 1fr;  
 }
 
-.hlavicka { 
-    grid-area: hlavicka; 
+.hlavicka {
+    grid-area: hlavicka;
     background-color: #255321;
     padding: 20px;
-    color:white;
+    color: white;
+    
+    /* Nové vlastnosti pro srovnání prvků do řady */
+    display: flex;
+    align-items: center;    /* Vertikálně vycentruje text, tlačítko a logo */
+    gap: 20px;              /* Mezera mezi nadpisem a tlačítkem */
 }
-.dark-hlavicka { 
+.dark-hlavicka {
     background-color: #255321;
     color:white;
+}
+
+
+/* 2. NOVÝ STYL PRO LOGO */
+.logo {
+    height: 50px;           /* Zmenšení loga na výšku (uprav si podle potřeby) */
+    width: auto;            /* Automatická šířka, aby se logo nedeformovalo */
+    margin-left: auto;      /* Magický řádek, který odsune logo na úplný pravý kraj */
 }
 
 .menu { 
