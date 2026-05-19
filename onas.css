@@ -1,0 +1,17 @@
+
+.foto-tymu {
+    width: 200px;           /* Šířka obrázku */
+    height: 200px;          /* Výška obrázku */
+    object-fit: cover;      /* Ořízne obrázek, aby se nedeformoval */
+    border: 3px solid #618f61; /* Zelený rámeček */
+    border-radius: 15px;    /* Zaoblené rohy */
+    margin-bottom: 10px;    /* Mezera mezi obrázkem a textem */
+    background-color: white;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap; /* Pokud se jich tam vejde víc, skočí na další řádek */
+    gap: 30px;      /* Mezera mezi jednotlivými produkty */
+    text-align: center;
+    transform: scale(1.05);
+}
