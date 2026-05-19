@@ -2,25 +2,25 @@
 
 const seznamVeci = [
     {
-        text: "crazy",
+        text: "Crazy turbánek",
         kategorie: "turbánek",
         obrazek: "img/turban bizzare.png", // Cesta k obrázku ve tvé složce
     },
     {
-        text: "prirodni",
+        text: "Přírodní turbánek",
         kategorie: "turbánek",
         obrazek: "img/přírodní turban.png",
     },
     {
-        text: "narodni",
+        text: "Národní turbánek",
         kategorie: "turbánek",
         obrazek: "img/turbanek.čr.png",
     },
    
     {
-        text: "vsechny",
+        text: "Všechny",
         kategorie: "turbánek",
-        obrazek: "img/vsechny.jpg",
+        obrazek: "img/vsechny.png",
     }
 ];
 
