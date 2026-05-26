@@ -6,6 +6,9 @@
 
 .obrazek {
     border: 3px solid rgb(24, 85, 0); 
+    align-self: flex-start; 
+    width: 150px;           
+    height: auto;
 }
 
 .popis {
@@ -13,7 +16,6 @@
     display: flex;          
     gap: 20px;            
     margin-bottom: 30px;    
-    align-items: flex-start;
 }
 
 .detaily-produktu {
