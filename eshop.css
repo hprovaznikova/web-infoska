@@ -22,23 +22,19 @@ body {
     background-color: #255321;
     padding: 20px;
     color: white;
-    
-    /* Nové vlastnosti pro srovnání prvků do řady */
     display: flex;
-    align-items: center;    /* Vertikálně vycentruje text, tlačítko a logo */
-    gap: 20px;              /* Mezera mezi nadpisem a tlačítkem */
+    align-items: center;  
+    gap: 20px;             
 }
 .dark-hlavicka {
     background-color: #255321;
     color:white;
 }
 
-
-/* 2. NOVÝ STYL PRO LOGO */
 .logo {
-    height: 50px;           /* Zmenšení loga na výšku (uprav si podle potřeby) */
-    width: auto;            /* Automatická šířka, aby se logo nedeformovalo */
-    margin-left: auto;      /* Magický řádek, který odsune logo na úplný pravý kraj */
+    height: 50px;           
+    width: auto;            
+    margin-left: auto;      
 }
 
 .e-shop {
@@ -96,45 +92,39 @@ body {
 .tmavy-rezim {
     color-scheme: dark;
     }
-/* --- NOVÉ STYLY PRO PRODUKTY --- */
 
-/* Odstranění teček u seznamu a seřazení vedle sebe */
 .e-shop ul {
     list-style: none;
     padding: 0;
     display: flex;
-    flex-wrap: wrap; /* Pokud se jich tam vejde víc, skočí na další řádek */
-    gap: 30px;      /* Mezera mezi jednotlivými produkty */
+    flex-wrap: wrap; 
+    gap: 30px;      
 }
 
-/* Styl pro samotnou položku seznamu */
 .e-shop li {
     text-align: center;
 }
 
-/* Styl pro odkaz (obaluje obrázek i text) */
 .e-shop a {
     display: flex;
-    flex-direction: column; /* Důležité: dá obrázek nahoru a text dolů */
+    flex-direction: column; 
     align-items: center;
-    text-decoration: none;  /* Zruší podtržení odkazu */
-    color: #699165;         /* Tmavě zelená barva textu, aby ladila */
+    text-decoration: none;  
+    color: #699165;         
     font-weight: bold;
-    transition: transform 0.2s; /* Efekt při najetí myší */
+    transition: transform 0.2s; 
 }
 
-/* Zvětšení při najetí myší (hover efekt) */
 .e-shop a:hover {
     transform: scale(1.05);
 }
 
-/* Styl pro obrázek turbánku */
 .foto-produktu {
-    width: 200px;           /* Šířka obrázku */
-    height: 200px;          /* Výška obrázku */
-    object-fit: cover;      /* Ořízne obrázek, aby se nedeformoval */
-    border: 3px solid #618f61; /* Zelený rámeček */
-    border-radius: 15px;    /* Zaoblené rohy */
-    margin-bottom: 10px;    /* Mezera mezi obrázkem a textem */
+    width: 200px;           
+    height: 200px;          
+    object-fit: cover;      
+    border: 3px solid #618f61; 
+    border-radius: 15px;    
+    margin-bottom: 10px;    
     background-color: white;
 }

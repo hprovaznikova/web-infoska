@@ -48,16 +48,16 @@ body {
 
 .obsah {
     display: grid;
-    place-items: center; /* Vystředí vše doprostřed (vertikálně i horizontálně) */
-    gap: 20px; /* Mezera mezi tlačítkem a boxem na výsledek */
+    place-items: center; 
+    gap: 20px; 
     font-size: 25px;
 }
 
 #vysledek {
     color: #255321;
-    background-color: #e0d5b4; /* Zelená */
-    transform: scale(1.1); /* Zvětšení */
-    transition: 0.3s; /* Animace */
+    background-color: #e0d5b4;
+    transform: scale(1.1);
+    transition: 0.3s; 
     font-size: 20px;
 }
 

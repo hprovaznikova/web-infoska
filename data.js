@@ -4,7 +4,7 @@ const seznamVeci = [
     {
         text: "Crazy turbánek",
         kategorie: "turbánek",
-        obrazek: "img/turban bizzare.png", // Cesta k obrázku ve tvé složce
+        obrazek: "img/turban bizzare.png", 
     },
     {
         text: "Přírodní turbánek",
@@ -25,6 +25,3 @@ const seznamVeci = [
 ];
 
 
-
-
-//vlozit obrazky do e shop js!!!!
