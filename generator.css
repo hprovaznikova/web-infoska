@@ -105,23 +105,23 @@ body {
 }
 
 #vysledek-img {
-    border: 3px solid rgb(24, 85, 0); 
+    border: 3px solid #618f61; 
     background-color: #618f61;
 }
 
 #dark-vysledek-img {
-    border: 3px solid rgb(111, 182, 83); 
+    border: 3px solid #618f61; 
     background-color: #7ecd7e;
 }
 
 #btn-tema {
-    border: 3px solid rgb(24, 85, 0); 
+    border: 3px solid #618f61; 
     background-color: #e0d5b4;
      color: black
 }
 
 #dark-btn-tema {
-    border: 3px solid rgb(24, 85, 0); 
+    border: 3px solid #618f61; 
     background-color: #4A412A;
     color: black
 }
