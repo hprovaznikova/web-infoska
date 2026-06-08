@@ -92,16 +92,16 @@ body {
 
 }
 #hl-tlacitko {
-    border: 3px solid rgb(24, 85, 0); 
+    border: 3px solid #618f61; 
     color: rgb(255, 255, 255); 
     font-size: 15px;
-    background-color: #618f61;
+    background-color: #4c714c;
 }
 
 #dark-hl-tlacitko {
-    border: 3px solid rgb(86, 205, 39); 
+    border: 3px solid #618f61; 
     color: rgb(0, 0, 0); 
-    background-color: #91d191;
+    background-color: #456f45;
 }
 
 #vysledek-img {
