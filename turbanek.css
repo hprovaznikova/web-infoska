@@ -26,10 +26,10 @@
 }
 
 #vlozitdokosiku {
-    border: 3px solid  #618f61(24, 85, 0); 
+    border: 3px solid  #2a422a(24, 85, 0); 
     color: rgb(255, 255, 255); 
     font-size: 15px;
-    background-color: #456f45;
+    background-color: #517d51;
     padding: 10px 20px;
     cursor: pointer;
 }
